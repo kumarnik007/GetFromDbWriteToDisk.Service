@@ -27,6 +27,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-AppConfiguration.AddEndpoints(app);
+AppConfiguration.AddEndpoints(app, builder.Configuration);
 
 app.Run();

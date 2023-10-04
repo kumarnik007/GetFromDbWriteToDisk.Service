@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Service.Models.Models
+namespace Service.Models.Schemas
 {
     public class Document
     {

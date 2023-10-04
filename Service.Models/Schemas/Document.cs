@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Service.Models.Schemas
 {
@@ -10,14 +11,5 @@ namespace Service.Models.Schemas
         public required string Type { get; set; }
         [Required]
         public required byte[] Data { get; set; }
-        [Required]
-        public int HistoryNo { get; set; }
-        public DateTime? ExportDateTime { get; set; }
-        [Required]
-        public bool Processed { get; set; }
-        public byte[]? ProcessedData { get; set; }
-        public string? ProcessedFilename { get; set; }
-        public string? ProcessedFiletype { get; set; }
-        public string? ProcessedFreetext { get; set; }
     }
 }
